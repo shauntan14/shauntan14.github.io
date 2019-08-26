@@ -64,8 +64,8 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<p><small>*I use a third party email form, don't be alarmed when there is a robot check- please follow through with it</small></p>
-								<form method="post" action="http://formspree.io/shauntan14@gmail.com">
+								<p><small>*You will get redirected to a weird page. I will still see the message but working on this</small></p>
+								<form method="POST" id="gform" action="https://script.google.com/macros/s/AKfycbzN34zN0xp89qoIMYeT-tzkTsNlhYMU2yPMS-ozZG5fRLMPyTc/exec">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -73,11 +73,11 @@
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="email" name="_replyto" id="email" />
+											<input type="email" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="body">Message</label>
-											<textarea name="body" id="message" rows="4"></textarea>
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -356,6 +356,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script data-cfasync="false" type="text/javascript"
+			src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 	</body>
 </html>
