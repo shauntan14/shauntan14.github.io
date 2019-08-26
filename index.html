@@ -342,10 +342,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 		<div id="bg-video">
-			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<video id="backgroundVideo" playsinline="playsinline" controls="controls" autoplay="autoplay" muted="muted" loop="loop" onclick="this.paused ? this.play() : this.pause();">
 					<source src="./videos/taiwanWebsite.mp4" type="video/mp4">
 					<source src="./videos/taiwanWebsite.webm" type="video/webm">
-				</video>
+			</video>
 		</div>
 	
 
